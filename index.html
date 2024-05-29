@@ -1,0 +1,66 @@
+<!-- Alunos: Marcos Bomfim e Leandro Francisco -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link href="_css/estilo.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="calculadora">
+        
+        <div id="container">
+            <div id="display">0</div>
+            <div id="controles">
+                <div id="lado-esquerdo">
+                    <form>
+                        <div class="form-input">
+                            <label for="campo1">
+                                Valor1
+                            </label>
+                            <input type="number" id="campo1" class="formulario" placeholder="Digite o valor 1">
+                        </div>
+                        <div class="form-input">
+                            <label for="campo2">
+                                Valor2
+                            </label>
+                            <input type="number" id="campo2" class="formulario" placeholder="Digite o valor 2">
+                        </div>
+                        <button type="button" class="botao botao-cinza" id="btn-calcular">Calcular</button>
+                    </form>
+                   
+                </div>
+                <div id="lado-direito">
+                    <div class=" cursor selecionado" id="soma" onclick="operacao(event)" 
+                    onmousemove="hover_move(event)" onmouseout="hover_out(event)"
+                    >SOMA</div>
+                    <div class="cursor" id="sub" onclick="operacao(event)" 
+                    onmousemove="hover_move(event)" onmouseout="hover_out(event)">SUBTRAÇÃO</div>
+
+                    <div class="cursor" id="div" onclick="operacao(event)"
+                    onmousemove="hover_move(event)" onmouseout="hover_out(event)">DIVISÃO</div>
+
+                    <div class=" cursor" id="mult" onclick="operacao(event)" 
+                    onmousemove="hover_move(event)" onmouseout="hover_out(event)">MULTIPLICAÇÃO</div>
+
+                    <div class="cursor" id="menor" onclick="operacao(event)" 
+                    onmousemove="hover_move(event)" onmouseout="hover_out(event)">MENOR VALOR</div>
+
+                    <div class="cursor" id="maior" onclick="operacao(event)" 
+                    onmousemove="hover_move(event)" onmouseout="hover_out(event)">MAIOR VALOR</div>
+
+                    <div class="cursor" id="pot" onclick="operacao(event)" 
+                    onmousemove="hover_move(event)" onmouseout="hover_out(event)">POTÊNCIA</div>
+
+                    <div class="cursor" id="hip" onclick="operacao(event)" 
+                    onmousemove="hover_move(event)" onmouseout="hover_out(event)">HIPOTENUSA</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
